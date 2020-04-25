@@ -1,0 +1,27 @@
+项目简介：
+爬取下厨房【家常菜】【快手菜】【下饭菜】【汤羹】四类菜品中的最近流行的，保存在 csv 文件，制作一个界面
+随机生成三菜一汤的菜谱，菜谱包含菜名，食材，评分，教程链接，并在界面中显示食材词云，用户可重复
+多次生成菜谱。
+
+
+spider.py
+下厨房：http://www.xiachufang.com/
+【家常菜】：http://www.xiachufang.com/category/40076/
+【快手菜】：http://www.xiachufang.com/category/40077/
+【下饭菜】：http://www.xiachufang.com/category/40078/
+【汤羹】：http://www.xiachufang.com/category/20130/
+
+爬取【家常菜】【快手菜】【下饭菜】【汤羹】这四种分类的菜单，
+爬取其中的，菜名，食材，评分，教程链接
+
+【家常菜】【快手菜】【下饭菜】这三类菜品使用 foods.csv 保存
+【汤羹】 使用 soups.csv 保存
+
+
+ui.py
+page 保存生成的界面逻辑
+
+
+ui_support.py
+page 在此文件添加界面触发的事件
+与界面交互的逻辑，生成菜单的逻辑，生成词云逻辑，添加部分有中文注释
